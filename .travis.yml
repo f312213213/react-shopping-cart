@@ -1,13 +1,15 @@
 language: node_js
 node_js:
-  - 18
+  - 16
+
 jobs:
   include:
+    # Define the release stage that runs semantic-release
     - stage: release
-      install:
-        - yarn install
+      node_js: 16
+      # Advanced: optionally overwrite your default `script` step to skip the tests
+      # script: skip
       deploy:
         provider: script
         script:
-          - yarn build
           - npx semantic-release
