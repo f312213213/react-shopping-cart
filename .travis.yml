@@ -9,7 +9,7 @@ jobs:
       node_js: 16
       script: yarn build
       deploy:
+        on:
+          branch: main
         provider: script
-        skip_cleanup: true
-        script:
-          - npx semantic-release
+        script: npx semantic-release
