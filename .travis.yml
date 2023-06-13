@@ -1,10 +1,9 @@
-language: node_js
-node_js:
-  - 16
 jobs:
   include:
     - stage: release
-      node_js: 16
+      node_js: 18
+      install:
+        - yarn install
       deploy:
         provider: script
         script:
