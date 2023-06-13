@@ -12,4 +12,6 @@ jobs:
         on:
           branch: main
         provider: script
-        script: npx semantic-release
+        script:
+          - nvm install lts/*
+          - npx semantic-release
