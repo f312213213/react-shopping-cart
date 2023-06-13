@@ -16,7 +16,7 @@ interface ICartContext {
   increaseItemQuantityById: (id: string, increaseCount: number) => void
   decreaseItemQuantityById: (id: string, decreaseCount: number) => void
   getItemQuantityById: (id: string) => void
-  cart: ICart
+  cartItems: ICartItem[]
   cartLength: number
 }
 
@@ -85,7 +85,7 @@ export const CartProvider = (
     increaseItemQuantityById,
     decreaseItemQuantityById,
     getItemQuantityById,
-    cart,
+    cartItems: Object.keys(cart).map(k => cart[k]),
     cartLength: Object.keys(cart).length,
   }
 
