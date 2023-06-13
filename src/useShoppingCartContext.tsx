@@ -20,7 +20,7 @@ interface ICartContext {
   cartLength: number
 }
 
-const CartContext = React.createContext<null | ICartContext>(null)
+const CartContext = React.createContext<ICartContext>({} as ICartContext)
 
 export const useCartContext = () => React.useContext(CartContext)
 
