@@ -1,4 +1,5 @@
 import React from 'react'
+import debounce from 'lodash/debounce'
 import omit from 'lodash/omit'
 
 interface ICartItem {
@@ -24,11 +25,25 @@ const CartContext = React.createContext<ICartContext>({} as ICartContext)
 
 export const useCartContext = () => React.useContext(CartContext)
 
+const setCartToLocalStorage = debounce((cart: ICart) => {
+  localStorage.reactShoppingCart = JSON.stringify(cart)
+}, 300)
+
 export const CartProvider = (
   props: any
 ) => {
   const { children } = props
   const [cart, setCart] = React.useState<ICart>({})
+
+  React.useEffect(() => {
+    if (localStorage.reactShoppingCart) {
+      setCart(JSON.parse(localStorage.reactShoppingCart))
+    }
+  }, [])
+
+  React.useEffect(() => {
+    setCartToLocalStorage(cart)
+  }, [cart])
 
   const removeCartItem = (id: string) => {
     setCart((prevState) => {
