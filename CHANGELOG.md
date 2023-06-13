@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/f312213213/react-shopping-cart/compare/v1.1.1...v1.1.2) (2023-06-13)
+
+
+### Bug Fixes
+
+* addItemToCart type declaration ([767c8cd](https://github.com/f312213213/react-shopping-cart/commit/767c8cdb52d75c17af6a302e50ee12edee9cc4e0))
+
 ## [1.1.1](https://github.com/f312213213/react-shopping-cart/compare/v1.1.0...v1.1.1) (2023-06-13)
 
 
