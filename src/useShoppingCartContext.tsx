@@ -12,7 +12,7 @@ interface ICart {
 
 interface ICartContext {
   removeCartItem: (id: string) => void
-  addItemToCart: (id: string, initialQuantity: number) => void
+  addItemToCart: (id: string, initialQuantity?: number) => void
   increaseItemQuantityById: (id: string, increaseCount: number) => void
   decreaseItemQuantityById: (id: string, decreaseCount: number) => void
   getItemQuantityById: (id: string) => void
