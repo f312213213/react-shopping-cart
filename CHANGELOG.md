@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/f312213213/react-shopping-cart/compare/v1.2.0...v1.3.0) (2023-06-13)
+
+
+### Features
+
+* implement cart storing functionality ([313f1dc](https://github.com/f312213213/react-shopping-cart/commit/313f1dc7a8a73f3e2c15b8eea41cf2ba5ee2200e))
+
 # [1.2.0](https://github.com/f312213213/react-shopping-cart/compare/v1.1.2...v1.2.0) (2023-06-13)
 
 
