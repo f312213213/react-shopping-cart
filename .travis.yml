@@ -13,4 +13,6 @@ jobs:
         on:
           branch: main
         provider: script
-        script: npx semantic-release
+        script: npx -p @semantic-release/changelog -p @semantic-release/git -p semantic-release semantic-release
+
+
