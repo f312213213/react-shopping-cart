@@ -1,6 +1,6 @@
 {
   "name": "@f312213213/react-shopping-cart",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "A react hook to make shopping cart easier.",
   "type": "module",
   "scripts": {
