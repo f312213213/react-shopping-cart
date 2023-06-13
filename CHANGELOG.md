@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/f312213213/react-shopping-cart/compare/v1.1.0...v1.1.1) (2023-06-13)
+
+
+### Bug Fixes
+
+* travis build cleanup issue ([49b8ceb](https://github.com/f312213213/react-shopping-cart/commit/49b8cebdfee3d410e47a9154f51fa1dcee133777))
+
 # [1.1.0](https://github.com/f312213213/react-shopping-cart/compare/v1.0.0...v1.1.0) (2023-06-13)
 
 
