@@ -1,13 +1,12 @@
 language: node_js
 node_js:
   - 16
-script:
-  - yarn build
 jobs:
   include:
     - stage: release
-      node_js: lts/*
+      node_js: 16
       deploy:
         provider: script
         script:
+          - yarn build
           - npx semantic-release
