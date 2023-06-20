@@ -26,19 +26,24 @@ const Store = () => {
 import { useCartContext } from '@f312213213/react-shopping-cart';
 
 const OtherComponents = () => {
-  const { cartItems } = useCartContext()
+  const { cartItems, addItemToCart } = useCartContext()
   return (
-      {
-        cartItems.map(cartItem => {
-          return (
-              <div>
-                {
-                  cartItem.id
-                }
-              </div>
-          )
-        })
-      }
+      <div>
+        <button onClick={() => addItemToCart(productId)}>
+          add to cart
+        </button>
+        {
+          cartItems.map(cartItem => {
+            return (
+                <div>
+                  {
+                    cartItem.id
+                  }
+                </div>
+            )
+          })
+        }
+      </div>
   )
 }
 
